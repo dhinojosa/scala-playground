@@ -2,7 +2,7 @@ name := "scala-playground"
 
 version := "1.0"
 
-scalaVersion := "2.13.3"
+scalaVersion := "2.13.10"
 
 libraryDependencies ++= Seq(
   "org.json4s" %% "json4s-native" % "3.6.9",
@@ -12,4 +12,4 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-parallel-collections" % "0.2.0"
 )
 
-mainClass in assembly := Some("com.evolutionnext.config.ConfigApp")
+assembly / mainClass := Some("com.evolutionnext.config.ConfigApp")
